@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang</a>
+        <a href="features.html">Fitur</a>
+        <a href="contact.html">Kontak</a>
+    </nav>
+
+    <div class="container">
+        <h2>Form Pendaftaran</h2>
+        <form onsubmit="submitForm(); return false;">
+            <label>Nama:</label>
+            <input type="text" name="nama" required><br>
+
+            <label>Email:</label>
+            <input type="email" name="email" required><br>
+
+            <label>Minat Belajar:</label><br>
+
+            <div class="checkbox-group">
+                <input type="checkbox" name="minat" value="Bahasa Indonesia">
+                <label>Bahasa Indonesia</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="minat" value="English">
+                <label>English</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="minat" value="Matematika">
+                <label>Matematika</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="minat" value="IPA">
+                <label>IPA</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" name="minat" value="IPS">
+                <label>IPS</label>
+            </div>
+
+            <input type="submit" value="Kirim">
+        </form>
+
+        <!-- Tambahan informasi kontak -->
+        <div class="contact-info">
+            <h3>Informasi Kontak</h3>
+            <p>Telepon: <a href="tel:+6281234567890">+62 812-3456-7890</a></p>
+        </div>
+
+        <a href="index.html" class="back-button">← Kembali ke Beranda</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+        <div class="container">
+            <p>&copy; 2025 SalStud. Semua Hak Dilindungi.</p>
+            <div class="sosial-media">
+                <a href="https://wa.me/6282306116970" target="_blank">WhatsApp</a> |
+                <a href="https://www.instagram.com/irzayaumilsyahrar?igsh=anc5aDhkdnB4emJ6&utm_source=qr" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</html>
